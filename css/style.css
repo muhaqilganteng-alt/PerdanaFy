@@ -76,7 +76,7 @@ body {
         border: none;
         text-decoration: none;
         bottom: 50px;
-        right: 50px;
+        right: 25px;
     }
 /* go up end */
 .colorSelectorButton-nama{
@@ -97,6 +97,10 @@ body {
 }
 
 .background-color {
+    background-color: #2279fd;
+}
+
+.background-color-reset {
     background-color: #2279fd;
 }
 
