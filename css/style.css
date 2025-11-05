@@ -62,7 +62,7 @@ body {
 }
 /* navbar end */
 /* go up */
-    .slideup{
+    .colorSelectorButton {
         background-color: #2279fd;
         color: white;
         height: 50px;
@@ -73,11 +73,34 @@ body {
         align-items: center;
         position: fixed;
         z-index: 1;
+        border: none;
         text-decoration: none;
         bottom: 50px;
         right: 50px;
     }
 /* go up end */
+.colorSelectorButton-nama{
+    background-color: #2279fd;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colorSelectorButton-nama input[type="color"] {
+    border: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+.background-color {
+    background-color: #2279fd;
+}
+
+/* setting end */
 
 .foto {
     background-color: #76a8f3;

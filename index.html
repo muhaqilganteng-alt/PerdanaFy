@@ -23,6 +23,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
+  <!-- animate css -->
+
+
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/animasi.css" />
   <title>portfolio</title>
@@ -31,7 +34,7 @@
 <body>
   <!-- header -->
   <header>
-    <nav class="navbar bg-primary border-bottom border-light" data-bs-theme="white">
+    <nav class="navbar background-color border-bottom border-light" data-bs-theme="white">
       <div class="container-fluid">
         <a class="navbar-brand text-white roboto-font nama" href="https://maps.app.goo.gl/HaGpJhSn9ccoSQ9u7">Achmad
           rezky
@@ -80,12 +83,36 @@
     </nav>
   </header>
   <!-- header end -->
-  <!-- go up -->
-  <a class="slideup" href="#" onclick="tes()">
-    <h1>↥</h1>
-  </a>
-  <!-- go up end -->
-
+  <!-- color Selector -->
+  <div class="colorSelectorButton">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="colorSelectorButton navbar-toggler-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+        </svg>
+      </span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- isi 1 -->
+        <div class="colorSelectorButton-nama background-color">
+          <p>Ubah warna</p>
+          <input id="colorInput" type="color" />
+          <input onclick="colorSubmit()" type="submit" />
+        </div>
+        <!-- isi 1 end -->
+      </div>
+    </div>
+  </div>
+  <!-- color Selector -->
+  <!-- profile -->
   <div id="profile" class="text-center foto">
     <img src="/assets/image/jomok.webp" class="rounded-circle" alt="..." />
 
@@ -96,6 +123,7 @@
     </p>
 
   </div>
+  <!-- profile end -->
 
   <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -103,148 +131,146 @@
         d="M0,256L48,218.7C96,181,192,107,288,101.3C384,96,480,160,576,181.3C672,203,768,181,864,170.7C960,160,1056,160,1152,181.3C1248,203,1344,245,1392,266.7L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
       </path>
     </svg>
-
-    <!-- about -->
-
-    <div id="about" class="container">
-      <div class="container text-center">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About me</h2>
-          </div>
+  </svg>
+  <!-- about -->
+  <div id="about" class="container">
+    <div class="container text-center">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>About me</h2>
         </div>
-        <div class="row fs-5 text-center">
-          <div class="col-md mb-3">
-            <p>Hai nama saya perdana, saya sangat gemar di bidang komputer, dan saya adalah seorang fullstack developer.
-            </p>
-          </div>
-          <div class="col-md mb-3">
-            <p>Saya memiliki pengalaman dalam mengembangkan aplikasi web menggunakan berbagai teknologi seperti HTML,
-              CSS, JavaScript, dan framework seperti Node.js.</p>
-          </div>
+      </div>
+      <div class="row fs-5 text-center">
+        <div class="col-md mb-3">
+          <p>Hai nama saya perdana, saya sangat gemar di bidang komputer, dan saya adalah seorang fullstack
+            developer.
+          </p>
+        </div>
+        <div class="col-md mb-3">
+          <p>Saya memiliki pengalaman dalam mengembangkan aplikasi web menggunakan berbagai teknologi seperti HTML,
+            CSS, JavaScript, dan framework seperti Node.js.</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#76a8f3" fill-opacity="1"
-        d="M0,128L48,106.7C96,85,192,43,288,64C384,85,480,171,576,186.7C672,203,768,149,864,112C960,75,1056,53,1152,48C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-      </path>
-    </svg>
-    <!-- about end -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#76a8f3" fill-opacity="1"
+      d="M0,128L48,106.7C96,85,192,43,288,64C384,85,480,171,576,186.7C672,203,768,149,864,112C960,75,1056,53,1152,48C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+    </path>
+  </svg>
+  <!-- about end -->
 
-    <!-- projects -->
+  <!-- projects -->
+  <section id="projects" style="background-color: #76a8f3;">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col">
+          <h2>my projects</h2>
+        </div>
+      </div>
 
-    <section id="projects" style="background-color: #76a8f3;">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col">
-            <h2>my projects</h2>
+      <div class="row">
+        <div class="col-md mb-3 kartu-projects">
+          <div class="card" style="width: 18rem;">
+            <img src="/assets/image/arduino.webp" class="card-img-top" alt="project1">
+            <div class="card-body">
+              <p class="card-text">Saya ingin membuat mobil mobilan, tapi bahan bahan nya sementara saya
+                pesan, jadi ditunggu ya ;)</p>
+            </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md mb-3 kartu-projects">
-            <div class="card" style="width: 18rem;">
-              <img src="/assets/image/arduino.webp" class="card-img-top" alt="project1">
-              <div class="card-body">
-                <p class="card-text">Saya ingin membuat mobil mobilan, tapi bahan bahan nya sementara saya
-                  pesan, jadi ditunggu ya ;)</p>
-              </div>
+        <div class="col-md mb-3 kartu-projects">
+          <div class="card" style="width: 18rem;">
+            <img src="/assets/image/coding.webp" class="card-img-top" alt="project2">
+            <div class="card-body">
+              <p class="card-text">saya baru saja membuat web virtual instrument, kamu boleh coba (landscape only)
+              </p>
+              <a href="https://virtual-instrument.vercel.app/"
+                class="card-text">https://virtual-instrument.vercel.app/</a>
             </div>
           </div>
+        </div>
 
-          <div class="col-md mb-3 kartu-projects">
-            <div class="card" style="width: 18rem;">
-              <img src="/assets/image/coding.webp" class="card-img-top" alt="project2">
-              <div class="card-body">
-                <p class="card-text">saya baru saja membuat web virtual instrument, kamu boleh coba (landscape only)</p>
-                <a href="https://virtual-instrument.vercel.app/" class="card-text">https://virtual-instrument.vercel.app/</a>
-              </div>
+        <div class="col-md mb-3 kartu-projects">
+          <div class="card" style="width: 18rem;">
+            <img src="/assets/image/github.webp" class="card-img-top" alt="project3">
+            <div class="card-body">
+              <p class="card-text">Saya memiliki masih banyak project yang belum jadi, kamu bisa mengecek github
+                saya.
+              </p>
+              <a href="https://github.com/perdanaqing-1120">lihat lebih detail</a>
             </div>
           </div>
+        </div>
 
-          <div class="col-md mb-3 kartu-projects">
-            <div class="card" style="width: 18rem;">
-              <img src="/assets/image/github.webp" class="card-img-top" alt="project3">
-              <div class="card-body">
-                <p class="card-text">Saya memiliki masih banyak project yang belum jadi, kamu bisa mengecek github saya.
-                </p>
-                <a href="https://github.com/perdanaqing-1120">lihat lebih detail</a>
-              </div>
+        <div class="col-md mb-3 kartu-projects">
+          <div class="card" style="width: 18rem;">
+            <img src="/assets/image/Keluarga-Berkualitas.webp" class="card-img-top" alt="project4">
+            <div class="card-body">
+              <p class="card-text">Dan ini adalah project terlama dan tersulit saya, yaitu membahagiakan orangtua.
+              </p>
             </div>
           </div>
-
-          <div class="col-md mb-3 kartu-projects">
-            <div class="card" style="width: 18rem;">
-              <img src="/assets/image/Keluarga-Berkualitas.webp" class="card-img-top" alt="project4">
-              <div class="card-body">
-                <p class="card-text">Dan ini adalah project terlama dan tersulit saya, yaitu membahagiakan orangtua.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
-    </section>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#76a8f3" fill-opacity="1"
-        d="M0,64L60,106.7C120,149,240,235,360,256C480,277,600,235,720,202.7C840,171,960,149,1080,165.3C1200,181,1320,235,1380,261.3L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-      </path>
-    </svg>
+    </div>
+  </section>
 
-    <!-- projects end -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#76a8f3" fill-opacity="1"
+      d="M0,64L60,106.7C120,149,240,235,360,256C480,277,600,235,720,202.7C840,171,960,149,1080,165.3C1200,181,1320,235,1380,261.3L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+    </path>
+  </svg>
+  <!-- projects end -->
 
-    <!-- contact -->
-
-
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>contact</h2>
-          </div>
+  <!-- contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h2>contact</h2>
         </div>
-
-        <label>Nama</label>
-        <div class="input-group input-group-sm mb-3">
-          <input type="text" class="form-control" aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-sm" placeholder="masukkan username">
-        </div>
-
-        <label>Komentar</label>
-        <div class="input-group mb-3">
-          <textarea class="form-control" aria-label="With textarea"
-            placeholder="masukkan pesan atau komentar anda"></textarea>
-        </div>
-
-        <label>Kirim oleh oleh berupa file "(opsional)</label>
-        <div class="input-group mb-3">
-          <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
-            aria-label="Upload">
-        </div>
-
-        <div class="d-grid gap-2">
-          <button class="btn btn-primary" type="button">Submit</button>
-        </div>
-
       </div>
-    </section>
 
-    <!-- contact end -->
+      <label>Nama</label>
+      <div class="input-group input-group-sm mb-3">
+        <input type="text" class="form-control" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" placeholder="masukkan username">
+      </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#76a8f3" fill-opacity="1"
-        d="M0,128L48,106.7C96,85,192,43,288,64C384,85,480,171,576,186.7C672,203,768,149,864,112C960,75,1056,53,1152,48C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-      </path>
-    </svg>
+      <label>Komentar</label>
+      <div class="input-group mb-3">
+        <textarea class="form-control" aria-label="With textarea"
+          placeholder="masukkan pesan atau komentar anda"></textarea>
+      </div>
 
-    <!-- <h1 class="bg-primary text-white p-2">portfolio</h1> -->
+      <label>Kirim oleh oleh berupa file "(opsional)</label>
+      <div class="input-group mb-3">
+        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+          aria-label="Upload">
+      </div>
+
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Submit</button>
+      </div>
+
+    </div>
+  </section>
+  <!-- contact end -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#76a8f3" fill-opacity="1"
+      d="M0,128L48,106.7C96,85,192,43,288,64C384,85,480,171,576,186.7C672,203,768,149,864,112C960,75,1056,53,1152,48C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+    </path>
+  </svg>
+
+  <!-- <h1 class="bg-primary text-white p-2">portfolio</h1> -->
 
 
-    <script src="./index.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
