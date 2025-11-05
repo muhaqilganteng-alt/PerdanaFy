@@ -31,10 +31,10 @@
   <title>portfolio</title>
 </head>
 
-<body>
+<body class="background-color-body">
   <!-- header -->
   <header>
-    <nav class="navbar background-color border-bottom border-light" data-bs-theme="white">
+    <nav class="navbar background-color-navbar border-bottom border-light" data-bs-theme="white">
       <div class="container-fluid">
         <a class="navbar-brand text-white roboto-font nama" href="https://maps.app.goo.gl/HaGpJhSn9ccoSQ9u7">Achmad
           rezky
@@ -85,9 +85,9 @@
   <!-- header end -->
   <!-- color Selector -->
   <div class="colorSelectorButton">
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="colorSelectorButton navbar-toggler-icon">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="colorSelectorButton background-color-navbar navbar-toggler-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill"
           viewBox="0 0 16 16">
           <path
@@ -102,18 +102,35 @@
       </div>
       <div class="offcanvas-body">
         <!-- isi 1 -->
+        <div class="colorSelectorButton-nama background-color-body">
+          <p>Ubah warna body</p>
+          <input id="colorInputBody" type="color" />
+          <input onclick="colorSubmitBody()" type="submit" />
+          <button onclick="resetColorBody()">Reset</button>
+        </div>
+        <!-- isi 1 end -->
+        <!-- isi 2 -->
+        <div class="colorSelectorButton-nama background-color-navbar">
+          <p>Ubah warna navbar</p>
+          <input id="colorInputNavbar" type="color" />
+          <input onclick="colorSubmitNavbar()" type="submit" />
+          <button onclick="resetColorNavbar()">Reset</button>
+        </div>
+        <!-- isi 2 end -->
+        <!-- isi 2 -->
         <div class="colorSelectorButton-nama background-color">
           <p>Ubah warna</p>
           <input id="colorInput" type="color" />
           <input onclick="colorSubmit()" type="submit" />
+          <button onclick="resetColor()">Reset</button>
         </div>
-        <!-- isi 1 end -->
+        <!-- isi 3 end -->
       </div>
     </div>
   </div>
   <!-- color Selector -->
   <!-- profile -->
-  <div id="profile" class="text-center foto">
+  <div id="profile" class="text-center background-color">
     <img src="/assets/image/jomok.webp" class="rounded-circle" alt="..." />
 
     <!-- Inline level -->

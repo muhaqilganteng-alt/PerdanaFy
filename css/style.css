@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
 body {
     font-family: "Chewy", system-ui;
     font-weight: 400;
     font-style: normal;
     margin-top: 4rem;
-    background-color: aliceblue;
-    /* height: 300vh; */
 }
 
 .roboto-font {
@@ -60,27 +67,31 @@ body {
         margin-left: 0.5rem;
     }
 }
+
 /* navbar end */
-/* go up */
-    .colorSelectorButton {
-        background-color: #2279fd;
-        color: white;
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        z-index: 1;
-        border: none;
-        text-decoration: none;
-        bottom: 50px;
-        right: 25px;
-    }
-/* go up end */
-.colorSelectorButton-nama{
-    background-color: #2279fd;
+
+/* setting button */
+.colorSelectorButton {
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    border: none;
+    text-decoration: none;
+    bottom: 50px;
+    right: 25px;
+}
+
+/* setting button end */
+
+/* setting */
+.colorSelectorButton-nama {
+    margin-bottom: 10px;
     width: 100%;
     border-radius: 10px;
     padding: 10px;
@@ -96,19 +107,20 @@ body {
     cursor: pointer;
 }
 
-.background-color {
+.background-color-body {
+    background-color: aliceblue;
+    color: black;
+}
+
+.background-color-navbar {
     background-color: #2279fd;
 }
 
-.background-color-reset {
-    background-color: #2279fd;
+.background-color {
+    background-color: #76a8f3;
 }
 
 /* setting end */
-
-.foto {
-    background-color: #76a8f3;
-}
 
 .foto img {
     user-select: none;
@@ -120,7 +132,5 @@ body {
     display: flex;
     justify-content: center;
 }
-/* projects end*/
 
-/* contact */
-/* contact end */
+/* projects end*/
