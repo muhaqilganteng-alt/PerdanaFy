@@ -37,13 +37,8 @@ body {
     -moz-box-shadow: 0px 0px 32px 31px rgba(0, 0, 0, 0.06);
 }
 
-.nama {
-    margin-left: 5rem;
-    color: #2279fd;
-}
-
 .burger-btn {
-    background-color: aliceblue;
+    background-color: rgb(240, 248, 255);
     height: 3rem;
     width: 3rem;
     border-radius: 0.3rem;
@@ -69,7 +64,6 @@ body {
 
 /* setting button */
 .colorSelectorButton {
-    color: white;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -78,7 +72,6 @@ body {
     align-items: center;
     position: fixed;
     z-index: 1;
-    border: none;
     text-decoration: none;
     bottom: 50px;
     right: 25px;
@@ -92,7 +85,6 @@ body {
     width: 100%;
     border-radius: 10px;
     padding: 10px;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,10 +104,12 @@ body {
 
 .background-color-navbar {
     background-color: #2279fd;
+    color: #ffffff;
 }
 
 .background-color {
     background-color: #76a8f3;
+    color: #000000;
 }
 
 /* setting end */

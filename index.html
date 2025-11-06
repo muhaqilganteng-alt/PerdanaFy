@@ -47,19 +47,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item text-white">
-              <a class="nav-link active navbar-btn" aria-current="page" href="#" style="color: #ffff">Home</a>
+              <a class="nav-link active navbar-btn" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item text-white">
-              <a class="nav-link active navbar-btn" aria-current="page" href="#about" style="color: #ffff">About</a>
+              <a class="nav-link active navbar-btn" aria-current="page" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navbar-btn" href="#projects" style="color: #ffff">projects</a>
+              <a class="nav-link navbar-btn" href="#projects">projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navbar-btn border-bottom" href="#contact" style="color: #ffff">Contact</a>
+              <a class="nav-link navbar-btn border-bottom" href="#contact">Contact</a>
             </li>
             <li class="nav-item dropdown">
-              <a style="color: #ffff" class="nav-link dropdown-toggle navbar-btn" href="#" role="button"
+              <a class="nav-link dropdown-toggle navbar-btn" href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Lihat lebih banyak
               </a>
@@ -95,10 +95,12 @@
         </svg>
       </span>
     </button>
-    <div class="offcanvas offcanvas-end background-color-body tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas offcanvas-end background-color-body tabindex=" -1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Settings</h5>
+        <button type="button" class="btn-close background-color" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <!-- isi 1 -->
@@ -125,6 +127,12 @@
           <button onclick="resetColor()">Reset</button>
         </div>
         <!-- isi 3 end -->
+        <!-- isi 4 -->
+        <div class="colorSelectorButton-nama background-color">
+          <p>Debug color (open console)</p>
+          <button onclick="debug()">Debug</button>
+        </div>
+        <!-- isi 4 end -->
       </div>
     </div>
   </div>
