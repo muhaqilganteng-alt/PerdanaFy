@@ -96,6 +96,15 @@ body {
     cursor: pointer;
 }
 
+.setting-panel {
+    background-color: #2279fd;
+    color: #ffffff;
+}
+
+.btn-close-color {
+    background-color: none;
+}
+
 .background-color-body {
     background-color: aliceblue;
     color: black;
@@ -106,6 +115,7 @@ body {
     background-color: #2279fd;
     color: #ffffff;
 }
+
 
 .background-color {
     background-color: #76a8f3;

@@ -5,7 +5,17 @@ const colorInput = document.getElementById("colorInput"); // Input warna utama
 const backgroundColorBody = document.querySelectorAll(".background-color-body");
 const backgroundColorNavbar = document.querySelectorAll(".background-color-navbar");
 const backgroundColor = document.querySelectorAll(".background-color");
+const settingPanel = document.querySelector('.setting-panel');
+const btnCloseColor = document.querySelector('.btn-close-color')
 const path = document.querySelectorAll('path');
+
+let settingPanelCount = null
+let settingPanelCount2 = null
+
+if (settingPanelCount === true && settingPanelCount2 === true) {
+    settingPanel.style.color = "white"
+    settingPanel.style.backgroundColor = "black"
+}
 
 // --- Liblary Hex to Hsl ---
 function hexToHsl(hex) {
@@ -52,32 +62,24 @@ function hexToHsl(hex) {
 }
 // --- Liblary Hex to Hsl ---
 
-
-function debug() {
-    // Ambil nilai HEX dari input utama
-    const hexColor = colorInput.value;
-
-    // Konversi HEX ke HSL
-    const hslColor = hexToHsl(hexColor);
-
-    // Tampilkan hasil konversi di konsol
-    console.log(`Warna HEX yang dimasukkan: ${hexColor}`);
-    console.log(`Hasil konversi ke HSL: ${hslColor}`);
-
-    // Contoh untuk melihat efeknya: terapkan warna HSL ke body (opsional)
-    // document.body.style.backgroundColor = hslColor;
-}
-
 function colorSubmitBody() {
     let konvert = colorInputBody.value;
     konvert = hexToHsl(konvert)
     backgroundColorBody.forEach(element => {
         element.style.backgroundColor = colorInputBody.value
 
+
         if (konvert <= 25) {
             element.style.color = "white"
+            btnCloseColor.style.backgroundColor = "white"
         } else {
             element.style.color = "black"
+        }
+
+        if (konvert <= 20) {
+            settingPanelCount = true
+        } else {
+            settingPanelCount = false
         }
     })
 }
@@ -86,6 +88,8 @@ function resetColorBody() {
     backgroundColorBody.forEach(element => {
         element.style.backgroundColor = "rgb(240, 248, 255)"
         element.style.color = "black"
+
+        settingPanelCount = false
     })
 }
 
@@ -97,8 +101,12 @@ function colorSubmitNavbar() {
         element.style.backgroundColor = colorInputNavbar.value
         if (konvert <= 25) {
             element.style.color = "white"
+
+            settingPanel.style.color = "black"
+            settingPanel.style.backgroundColor = "white"
         } else {
             element.style.color = "black"
+            element.style.border = "none"
         }
     })
 }
@@ -121,7 +129,14 @@ function colorSubmit() {
         } else {
             element.style.color = "black"
         }
+
+        if (konvert <= 20) {
+            settingPanelCount2 = true
+        } else {
+            settingPanelCount2 = false
+        }
     })
+
 
     // Ubah warna elemen <path> (SVG)
     path.forEach(element => {
@@ -133,6 +148,9 @@ function resetColor() {
     backgroundColor.forEach(element => {
         element.style.backgroundColor = "rgb(118, 168, 243)"
         element.style.color = "black"
+
+        settingPanelCount2 = false
+
     })
 
     path.forEach(element => {

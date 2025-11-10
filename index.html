@@ -46,20 +46,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item text-white">
-              <a class="nav-link active navbar-btn" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item text-white">
-              <a class="nav-link active navbar-btn" aria-current="page" href="#about">About</a>
+            <li class="nav-item">
+              <a class="nav-link active navbar-btn background-color-navbar" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navbar-btn" href="#projects">projects</a>
+              <a class="nav-link active navbar-btn background-color-navbar" aria-current="page" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navbar-btn border-bottom" href="#contact">Contact</a>
+              <a class="nav-link active navbar-btn background-color-navbar" href="#projects">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active navbar-btn border-bottom background-color-navbar" href="#contact">Contact</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle navbar-btn" href="#" role="button"
+              <a class="nav-link dropdown-toggle navbar-btn background-color-navbar active" href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Lihat lebih banyak
               </a>
@@ -87,7 +87,7 @@
   <div class="colorSelectorButton">
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
       aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="colorSelectorButton background-color-navbar navbar-toggler-icon">
+      <span class="setting-panel colorSelectorButton navbar-toggler-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill"
           viewBox="0 0 16 16">
           <path
@@ -99,7 +99,7 @@
       aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Settings</h5>
-        <button type="button" class="btn-close background-color" data-bs-dismiss="offcanvas"
+        <button type="button" class="btn-close btn-close-color " data-bs-dismiss="offcanvas"
           aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -128,10 +128,6 @@
         </div>
         <!-- isi 3 end -->
         <!-- isi 4 -->
-        <div class="colorSelectorButton-nama background-color">
-          <p>Debug color (open console)</p>
-          <button onclick="debug()">Debug</button>
-        </div>
         <!-- isi 4 end -->
       </div>
     </div>
