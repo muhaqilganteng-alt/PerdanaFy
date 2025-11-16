@@ -25,11 +25,6 @@ body {
     right: 0;
     left: 0;
     z-index: 1;
-    /* border-radius: 0.5rem; */
-    /* margin: 0.5rem 0.5rem; */
-    /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1); */
     display: flex;
     justify-content: center;
     box-shadow: 0px 0px 32px 31px rgba(0, 0, 0, 0.06);
@@ -48,6 +43,17 @@ body {
     -moz-box-shadow: 0px 0px 32px 31px rgba(0, 0, 0, 0.06);
 }
 
+.burger-btn:hover {
+    border: #5b9bfc;
+}
+
+.burger-btn:active {
+    scale: 1.1;
+}
+
+.navbar-btn:hover {
+    text-decoration: underline;
+}
 
 .nama {
     text-align: center;
@@ -97,8 +103,8 @@ body {
 }
 
 .setting-panel {
-    background-color: #2279fd;
-    color: #ffffff;
+    background-color: aliceblue;
+    color: #76a8f3;
 }
 
 .btn-close-color {
@@ -114,6 +120,14 @@ body {
 .background-color-navbar {
     background-color: #2279fd;
     color: #ffffff;
+}
+
+.background-color-navbar a:hover {
+    color: #ffffff;
+}
+
+.background-color-navbar button:hover {
+    background-color: #ffffff;
 }
 
 
@@ -135,4 +149,18 @@ body {
     justify-content: center;
 }
 
+.kartu-projects {
+    transition: 0.5s ease-in-out;
+}
+
+.kartu-projects:hover {
+    scale: 1.05;
+}
 /* projects end*/
+
+/* contact */
+.contact-btn:hover {
+    background-color: #2279fd;
+    color: #ffffff;
+}
+/* contact end */

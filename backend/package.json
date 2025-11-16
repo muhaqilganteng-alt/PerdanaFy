@@ -1,0 +1,21 @@
+{
+  "name": "perdanafy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perdanaqing-1120/komunitas.git"
+  },
+  "keywords": [],
+  "author": "Perdana",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/perdanaqing-1120/komunitas/issues"
+  },
+  "homepage": "https://github.com/perdanaqing-1120/komunitas#readme"
+}

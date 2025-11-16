@@ -12,11 +12,6 @@ const path = document.querySelectorAll('path');
 let settingPanelCount = null
 let settingPanelCount2 = null
 
-if (settingPanelCount === true && settingPanelCount2 === true) {
-    settingPanel.style.color = "white"
-    settingPanel.style.backgroundColor = "black"
-}
-
 // --- Liblary Hex to Hsl ---
 function hexToHsl(hex) {
     hex = hex.replace(/^#/, '');
@@ -81,6 +76,7 @@ function colorSubmitBody() {
         } else {
             settingPanelCount = false
         }
+        functionSettingPanel()
     })
 }
 
@@ -90,6 +86,7 @@ function resetColorBody() {
         element.style.color = "black"
 
         settingPanelCount = false
+        functionSettingPanel()
     })
 }
 
